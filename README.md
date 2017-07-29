@@ -13,10 +13,11 @@ sudo apt-get -y instal gawk
 - -i Ignorecase
 - -s SmartCase
 - -c The lines number of one side of searching context
+- Also can freely use only two [pattern] as key words for describing your specific context. Also only one pattern is OK.
 
 Suggest to move 'gm' into your '/usr/local/bin/', give it execute permission, then you can:
 ```
-kan@kan-x220i:~$gm ":sensorevent" "->enable" -c 30 period -i `find /work/daily/note/ -type f`
+kan@home:~$gm ":sensorevent" "->enable" -c 30 period -i `find /work/daily/note/ -type f`
 ==========
 <</work/daily/note/cts_sensor_timeout_and_wrong_order_on_msm8998.txt>>
 1397@1:		status_t SensorService::SensorEventConnection::enableDisable(
