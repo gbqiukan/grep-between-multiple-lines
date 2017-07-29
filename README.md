@@ -10,6 +10,9 @@ sudo apt-get -y instal gawk
 ## Application
 **Usage: gm [-c SCOPE] [-i] [-s] Pattern1 [Pattern2] [Pattern3]**
 > Plus: you can put these options in whatever orders to make you feel really freely:)
+- -i Ignorecase
+- -s SmartCase
+- -c The lines number of one side of searching context
 
 Suggest to move 'gm' into your '/usr/local/bin/', give it execute permission, then you can:
 ```
