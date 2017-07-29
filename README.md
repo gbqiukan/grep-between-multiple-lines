@@ -3,6 +3,9 @@ It's an AWK Script to quickly locate your complicated patterns according to your
 
 ## Installation
 The only precondition is GNU AWK and shell environment.
+### Steps
+(Use Debian as Example)
+sudo apt-get -y instal gawk
 
 ## Application
 **Usage: gm [-c SCOPE] [-i] [-s] Pattern1 [Pattern2] [Pattern3]**
