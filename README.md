@@ -1,2 +1,2 @@
 # grep-between-multiple-lines
-It's an AWK Script to locate your pattern under simple customized context.
+It's an AWK Script to quickly locate your complicated patterns according to your specific context.
