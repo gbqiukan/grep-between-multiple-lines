@@ -9,15 +9,15 @@ sudo apt-get -y instal gawk
 
 ## Application
 **Usage: gm [-c SCOPE] [-i] [-s] Pattern1 [Pattern2] [Pattern3]**
-> Plus: you can put these options in whatever orders to make you feel really freely:)
+> Plus: you can put [-c SCOPE], [-i], [-s] and [Pattern] options in whereever and whatever orders which would make you feel the most freely:)
 - -i Ignorecase
 - -s SmartCase
-- -c The lines number of one side of searching context
+- -c The lines number of one side of searching context, the default is 1.
 - Also can freely use only two [pattern] as key words for describing your specific context. Also only one pattern is OK.
 
-Suggest to move 'gm' into your '/usr/local/bin/', give it execute permission, then you can:
+Suggest to move 'gm' into your '/usr/local/bin/', give it execute permission, then you can find out particular context within multiple lines, e.g. your need one function whose class name is 'sensorevnetxxx', and it should contains one calling looks like '->enable', then you think it should exist 'period' as the key word in the next and very near lines:
 ```
-kan@home:~$gm ":sensorevent" "->enable" -c 30 period -i `find /work/daily/note/ -type f`
+kan@home:~$gm ":sensorevent" "->enable" -c 200 period -i `find /work/daily/note/ -type f`
 ==========
 <</work/daily/note/cts_sensor_timeout_and_wrong_order_on_msm8998.txt>>
 1397@1:		status_t SensorService::SensorEventConnection::enableDisable(
