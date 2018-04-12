@@ -1,16 +1,18 @@
-# grep-between-multiple-lines
-It's an AWK Script to quickly locate your complicated patterns according to your specific context.
+# Grep between particular context
+Once the demand for searching become complex, it is painful when you only have tools to grep out of one line.
+It's a draft AWK Script to quickly locate your complicated patterns according to your specific context.
 
 ## Installation
 The only precondition is GNU AWK and shell environment.
+
 ### Steps
 (Use Debian as Example)
-sudo apt-get -y instal gawk
+sudo apt-get -y install gawk
 
 ## Application
 **Usage: gm [-c SCOPE] [-i] [-s] Pattern1 [Pattern2] [Pattern3]**
-> Plus: you can put [-c SCOPE], [-i], [-s] and [Pattern] options in whereever and whatever orders which would make you feel the most freely:)
-- -i Ignorecase
+> Plus: you can put [-c SCOPE], [-i], [-s] and [Pattern]s options in whereever and whatever orders which would make you feel the most freely:)
+- -i IgnoreCase
 - -s SmartCase
 - -c The lines number of one side of searching context, the default is 1.
 - Also can freely use only two [pattern] as key words for describing your specific context. Also only one pattern is OK.
