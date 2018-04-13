@@ -1,7 +1,5 @@
-# Grep between your particular context
-Once the demand for searching become complex, it is painful when you only have tools to grep out of one line.
-
-It's a draft AWK Script to quickly locate your complicated patterns according to your specific context.
+# Grep in your particular context
+Once the demand for searching become complex, it is painful when you only have tools to grep from single line.
 
 AWK also has support for extended regular expression:)
 
@@ -14,7 +12,7 @@ sudo apt-get -y install gawk
 
 ## Application
 **Usage: gm [-c SCOPE] [-i] [-s] Pattern1 [Pattern2] [Pattern3]**
-> Plus: you can put [-c SCOPE], [-i], [-s] and [Pattern] options in whereever and whatever orders which would make you feel the most freely:)
+> Plus: you can put [-c SCOPE], [-i], [-s] options in whereever and whatever orders which would make you feel the most freely:)
 - -i IgnoreCase
 - -s SmartCase
 - -c The lines number of one side of searching context, the default is 1.
